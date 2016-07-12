@@ -1,0 +1,7 @@
+.font{
+    font-size: 50px;
+}
+.header{
+    height: 50px;
+    background-color: rgab(0,0,0,0.5);  
+}
