@@ -2,6 +2,319 @@
     font-size: 50px;
 }
 .header{
-    height: 50px;
-    background-color: rgab(0,0,0,0.5);  
+    height: 100px;
+    background-color: rgba(0,0,0,0.5);  
+}
+.col-3-1{
+        visibility: visible;
+    
+}
+.col-3-2{
+    visibility: visible;
+    
+}
+.col-3-3{
+    visibility: visible;
+    
+}
+.clear{
+    clear: both;
+}
+.main{
+position:relative;
+height: 700px;
+}
+section{
+    background-color: grey;
+    height: 600px;
+    color:white;
+}
+.button {
+  border-radius: 5px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 500px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+h1{
+ text-align: center; 
+font-size: 200px;
+}
+h3{
+ text-align: center; 
+    text-underline-position:below; 
+    color: orange;
+}
+//buble
+body,
+html {
+   h@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400';eight: 100%;
+   width: 100%;
+   background: linear-gradient(90deg, #031131, #284C75);
+   font-family: 'Open Sans', Calibri;
+   font-weight: 400;
+   overflow: hidden;
+}
+
+.card {
+   position: fixed;
+   color: #4E6868;
+   border-radius: 6px;
+   background-color: white;
+   width: 400px;
+   left: 50%;
+   margin-left: -200px;
+   height: 500px;
+   top: 50%;
+   margin-top: -100px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+   text-align: center;
+   z-index: 9999999;
+   .avatar {
+      position: absolute;
+      width: 100%;
+      top: -200px;
+      .cp {
+         color: white;
+         font-weight: 100;
+         font-size: 2em;
+         top: -50px;
+         position: relative;
+         span {
+            font-weight: 900;
+            font-size: 1.4em;
+         }
+      }
+      .meter {
+         position: absolute;
+         height: 350px;
+         width: 350px;
+         left: 50%;
+         top: 20px;
+         margin-left: -175px;
+         border-top: 4px solid rgba(255, 255, 255, 1);
+         border-bottom: 4px solid rgba(255, 255, 255, 1);
+         border-left: 4px solid rgba(255, 255, 255, 1);
+         border-right: 4px solid rgba(255, 255, 255, .5);
+         border-radius: 100%;
+         &:after {
+            content: '';
+            background-color: white;
+            border-radius: 50%;
+            height: 15px;
+            width: 15px;
+            display: block;
+            position: absolute;
+            right: 45px;
+            top: 40px;
+         }
+      }
+      img {
+         width: 150px;
+         margin: 0 auto;
+         z-index: 9999;
+         top: -50px;
+         position: relative;
+      }
+   }
+   .pokename {
+      padding: 60px 0 15px;
+      font-size: 2em;
+      z-index: 9999;
+      position: relative;
+      i {
+         font-size: .8em;
+         color: #999;
+         z-index: 9999;
+         position: relative;
+      }
+   }
+   .hp {
+      width: 200px;
+      height: 5px;
+      z-index: 9999;
+      position: relative;
+      background-color: #71EDB6;
+      margin: 0 auto;
+      border-radius: 2px;
+      font-weight: 900;
+      span {
+         font-size: .9em;
+         padding-top: 14px;
+         display: block;
+         z-index: 9999;
+         position: relative;
+      }
+   }
+   .stats {
+      height: auto;
+      margin: 30px auto 40px;
+      width: 90%;
+      padding: 15px;
+      z-index: 9999;
+      position: relative;
+      .stat {
+         float: left;
+         padding: 5px;
+         width: 33.33333332%;
+         box-sizing: border-box;
+         border-right: 1px solid rgba(0, 0, 0, .15);
+         font-weight: 900;
+         &:nth-child(3) {
+            border: none;
+         }
+         span {
+            padding-top: 8px;
+            display: block;
+            font-size: .8em;
+            font-weight: 100;
+         }
+      }
+   }
+   hr {
+      position: relative;
+      top: 15px;
+      border: none;
+      height: 1px;
+      width: 100%;
+      display: block;
+      background-color: rgba(0, 0, 0, .15);
+   }
+   .star-candy {
+      margin: 40px 0 60px;
+      .starcandy {
+         width: 50%;
+         float: left;
+         span {
+            top: -6px;
+            font-weight: 900;
+            font-size: 1.2em;
+            position: relative;
+         }
+      }
+   }
+   .power-up {
+      width: 80%;
+      margin: 10px auto;
+      background-color: #E8EFDF;
+      height: 47px;
+      font-weight: 500;
+      border-radius: 50px 3px 3px 50px;
+      .btn {
+         float: left;
+         border-radius: 50px;
+         padding: 15px;
+         width: 50%;
+         cursor:pointer;
+         color: white;
+         position:relative;
+         z-index:99999;
+         box-sizing: border-box;
+         background: linear-gradient(90deg, #A5DA96, #3FCCA9);
+         &:hover {
+            background: linear-gradient(200deg, #A5DA96, #3FCCA9);
+         }
+      }
+      .reqs {
+         top: 8px;
+         position: relative;
+         display: block;
+         span {
+            top: -8px;
+            position: relative;
+            margin-right: 12px;
+         }
+      }
+   }
+}
+
+.creds {
+   position: fixed;
+   bottom: 2px;
+   right: 2px;
+   color: #ccc;
+   font-size: .8em;
+   a {
+      color: #41CCA9;
+   }
+}
+
+.particles {
+   height: 100%;
+   width: 100%;
+   .particle {
+      border-radius:50%;
+      position: absolute;
+      background-color: white;
+      @for $i from 1 through 50 {
+         &:nth-child(#{$i}) {
+            top: random(49)+1%;
+            left: random(99)+1%;
+            height:$i*1.4px;
+            width:$i*1.4px;
+            transition:all 2s ease;
+            animation:sparkle random(20000, 25000)+1ms random(9999)+-9999s ease-in-out infinite;
+         }
+      }
+   }
+}
+$spread:80;
+@keyframes sparkle {
+   0% {
+      background-color: Rgba(255, 255, 255, .3);
+      transform:translateX(0);
+   }
+   25% {
+      background-color: Rgba(255, 255, 255, random(50, 90)*.005);
+      transform:translateX(random($spread)+-$spread+px) translateY(random($spread)+-$spread+px);
+   }
+   40% {
+      background-color: Rgba(255, 255, 255, random(50, 90)*.005);
+   }
+   50% {
+      background-color: Rgba(255, 255, 255, random(50, 90)*.007);
+      transform:translateX(random($spread)+-$spread+px) translateY(random($spread)+-$spread+px);
+   }
+   60% {
+      background-color: Rgba(255, 255, 255, random(50, 90)*.005);
+   }
+   75% {
+      background-color: Rgba(255, 255, 255, random(50, 90)*.006);
+      transform:translateX(random($spread)+-$spread+px) translateY(random($spread)+-$spread+px);
+   }
+   100% {
+      background-color: Rgba(255, 255, 255, .3);
+      transform:translateX(0);
+   }
 }
